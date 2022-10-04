@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <table class="nav">
+          <tr>
+            <td class="td1">
+              <a href="../main.html">
+                <img class="logo" src="../images/2.png" alt="logoimage" />
+              </a>
+            </td>
+            <td class="td2 text">
+              <a href="../main.html">Пошук авто в Україні</a>
+            </td>
+            <td class="text">
+              <a href="auth.html"
+                ><img
+                  src="../images/icon.png"
+                  alt="profileicon"
+                  class="icon"
+                />Увійти в кабінет</a
+              >
+            </td>
+          </tr>
+        </table>
+        <hr />
+      </div>
+    </header>
+    <main>
+      <div class="container2">
+        <h1 class="center">Регестрація аккаунту</h1>
+        <hr />
+        <form action="https://fom.in.ua/echo">
+          <div>
+            <p>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                class="input"
+                placeholder="  Ваше ім'я*"
+                required
+              />
+              <input
+                id="sure"
+                name="sure"
+                type="text"
+                class="input"
+                placeholder="  Ваше прізвище*"
+                required
+              />
+            </p>
+            <input
+              name="email"
+              id="email"
+              type="email"
+              class="input i"
+              placeholder=" E-Mail*"
+              required
+            />
+            <input
+              name="tel"
+              id="tel"
+              type="tel"
+              class="input i"
+              placeholder=" Номер телефону"
+            />
+            <hr />
+            <p><label for="password1">Введіть пароль:*</label></p>
+            <input class="input" type="password" id="password1" required />
+
+            <p><label for="password2">Повторіть пароль:*</label></p>
+            <input class="input" type="password" id="password2" required />
+          </div>
+          <div class="submit">
+            <button type="submit" class="button">Регестрація</button>
+          </div>
+          <hr />
+          <div class="link2">
+            <a href="auth.html">Вже зареєстровані?</a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <hr />
+      <div class="footer">
+        <div class="block1">
+          <div class="autotext line">
+            <p class="text2">AUTO.MIR</p>
+            скоро у вашому смартфоні
+          </div>
+          <div class="autoimg line">
+            <img class="autoimg line" src="../images/3.jpg" alt="iphoneicon" />
+          </div>
+          <div class="autocontact line">
+            <div class="text3">Наші контакти</div>
+            <hr />
+            <nav>
+              <a href="#"
+                ><img
+                  class="footicon"
+                  src="../images/facebook.png"
+                  alt="facebookicon"
+              /></a>
+              <a href="#"
+                ><img class="footicon" src="../images/inst.png" alt="insticon"
+              /></a>
+              <a href="#"
+                ><img
+                  class="footicon"
+                  src="../images/telegram.png"
+                  alt="telegramicon"
+              /></a>
+              <a href="#"
+                ><img
+                  class="footicon"
+                  src="../images/viber.png"
+                  alt="videricon"
+              /></a>
+              <a href="#"
+                ><img
+                  class="footicon"
+                  src="../images/tel.png"
+                  alt="telphoneicon"
+              /></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

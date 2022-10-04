@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <table class="nav">
+          <tr>
+            <td class="td1">
+              <a href="#">
+                <img class="logo" src="images/2.png" alt="logoimage" />
+              </a>
+            </td>
+            <td class="td2 text">
+              <a href="#">Пошук авто в Україні</a>
+            </td>
+            <td class="text">
+              <a href="pages/auth.html"
+                ><img
+                  src="images/icon.png"
+                  alt="profileicon"
+                  class="icon"
+                />Увійти в кабінет</a
+              >
+            </td>
+          </tr>
+        </table>
+        <hr />
+      </div>
+    </header>
+    <main>
+      <div class="container1">
+        <h1 class="center">Пошук авто</h1>
+        <hr />
+        <form action="https://fom.in.ua/echo">
+          <p>
+            <label>Тип кузова:</label>
+            <select name="Кузов" class="input">
+              <option value="Будь-який">Будь-який</option>
+              <option value="Седан">Седан</option>
+              <option value="Універсал">Універсал</option>
+              <option value="Купе">Купе</option>
+              <option value="Позашляховик/кросовер">
+                Позашляховик/кросовер
+              </option>
+              <option value="Кабріолет">Кабріолет</option>
+            </select>
+          </p>
+          <p>
+            <label>Марка авто:</label>
+            <select name="Марка" class="input">
+              <option value="Будь-який">Будь-який</option>
+              <option value="Audi">Audi</option>
+              <option value="BMW">BMW</option>
+              <option value="Ford">Ford</option>
+              <option value="Honda">Honda</option>
+              <option value="Hyndai">Hyndai</option>
+              <option value="Kia">Kia</option>
+              <option value="Lexus">Lexus</option>
+              <option value="Mazda">Mazda</option>
+              <option value="Mersedes-Benz">Mersedes-Benz</option>
+              <option value="Mitsubishi">Mitsubishi</option>
+              <option value="Nissan">Nissan</option>
+              <option value="Toyota">Toyota</option>
+            </select>
+          </p>
+          <p>
+            <label>Країна виробник:</label>
+            <select name="Країна виробник" class="input">
+              <option value="Будь-який">Будь-який</option>
+              <option value="США">США</option>
+              <option value="Німеччина">Німеччина</option>
+              <option value="Канада">Канада</option>
+              <option value="Україна">Україна</option>
+            </select>
+          </p>
+          <p>
+            <label>Рік виробництва</label>
+            <input
+              class="input"
+              type="number"
+              name="МінРік"
+              min="1980"
+              max="2023"
+              value="1980"
+            />
+            -
+            <input
+              class="input i"
+              type="number"
+              name="МаксРік"
+              min="1980"
+              max="2023"
+              value="2023"
+            />
+          </p>
+          <hr />
+          <p>
+            <label>Вартість</label>
+            <input
+              class="input"
+              type="number"
+              name="МінВартість"
+              min="0"
+              max="10000000"
+              value="0"
+            />
+            -
+            <input
+              class="input i"
+              type="number"
+              name="МаксВартість"
+              min="0"
+              max="10000000"
+              value="10000000"
+            />
+
+            <select name="Валюта" class="input1">
+              <option value="$">$</option>
+              <option value="₴">₴</option>
+              <option value="€">€</option>
+            </select>
+          </p>
+          <p>
+            <input type="checkbox" class="input1" name="Кредит" id="kr" />
+            <label for="kr">Кредит</label>
+          </p>
+          <p>
+            <input type="checkbox" class="input1" name="Торг" id="kr2" />
+            <label for="kr2">Торг</label>
+          </p>
+          <p>
+            <input type="checkbox" class="input1" name="Обмін" id="kr3" />
+            <label for="kr3">Обмін</label>
+          </p>
+          <hr />
+          <h1>Стан авто</h1>
+          <p>
+            <input
+              type="checkbox"
+              name="Авто в Україні"
+              class="check"
+              id="lak"
+            />
+            <label for="lak">Авто в Україні</label>
+            <input type="checkbox" name="Був у ДТП" class="check" id="lak2" />
+            <label for="lak2">Був у ДТП</label>
+            <input type="checkbox" name="Не на ходу" class="check" id="lak3" />
+            <label for="lak3">Не на ходу</label>
+            <input type="checkbox" name="В кредиті" class="check" id="lak4" />
+            <label for="lak4">В кредиті</label>
+          </p>
+          <p>
+            <input
+              type="checkbox"
+              name="Нерозмитнена"
+              class="check"
+              id="lak5"
+            />
+            <label for="lak5">Нерозмитнена</label>
+            <input
+              type="checkbox"
+              name="Без документів"
+              class="check"
+              id="lak6"
+            />
+            <label for="lak6">Без документів</label>
+            <input
+              type="checkbox"
+              name="Один власник"
+              class="check"
+              id="lak7"
+            />
+            <label for="lak7">Один власник</label>
+            <input
+              type="checkbox"
+              name="Проблеми з кузовом"
+              class="check"
+              id="lak8"
+            />
+            <label for="lak8">Проблеми з кузовом</label>
+          </p>
+          <p>
+            <label>Тип палива:</label>
+            <select name="Тип палива:" class="input">
+              <option value="Будь-який">Будь-який</option>
+              <option value="Бензин">Бензин</option>
+              <option value="Дизель">Дизель</option>
+              <option value="Газ">Газ</option>
+              <option value="Електрокар">Електрокар</option>
+            </select>
+          </p>
+          <p>
+            <label>Тип корбки:</label>
+            <select name="Тип коробка:" class="input">
+              <option value="Будь-який">Будь-який</option>
+              <option value="Автомат">Автомат</option>
+              <option value="Ручна/Механіка">Ручна/Механіка</option>
+              <option value="Робот">Робот</option>
+              <option value="Типтронік">Типтронік</option>
+              <option value="Варіатор">Варіатор</option>
+            </select>
+          </p>
+          <p>
+            <label>Колір:</label>
+            <select name="Колір:" class="input">
+              <option value="Будь-який">Будь-який</option>
+              <option value="Чорний">Чорний</option>
+              <option value="Білий">Білий</option>
+              <option value="Синій">Синій</option>
+              <option value="Червоний">Червоний</option>
+              <option value="Бежевий">Бежевий</option>
+            </select>
+          </p>
+          <p>
+            <label>Тип корбки:</label>
+            <select name="Тип коробка:" class="input">
+              <option value="Будь-який">Будь-який</option>
+              <option value="Автомат">Автомат</option>
+              <option value="Ручна/Механіка">Ручна/Механіка</option>
+              <option value="Робот">Робот</option>
+              <option value="Типтронік">Типтронік</option>
+              <option value="Варіатор">Варіатор</option>
+            </select>
+          </p>
+          <h2>Додаткові опції</h2>
+          <p>
+            <input type="checkbox" name="Люк" class="check" id="luk" />
+            <label for="luk">Люк</label>
+            <input
+              type="checkbox"
+              name="Шкіряний салон"
+              class="check"
+              id="luk2"
+            />
+            <label for="luk2">Шкіряний салон</label>
+            <input type="checkbox" name="Саббуфери" class="check" id="luk3" />
+            <label for="luk3">Саббуфери</label>
+            <input type="checkbox" name="Кондиціонер" class="check" id="luk4" />
+            <label for="luk4">Кондиціонер</label>
+          </p>
+          <p>
+            <input
+              type="checkbox"
+              name="Підігрів сидіння"
+              class="check"
+              id="luk5"
+            />
+            <label for="luk5">Підігрів сидіння</label>
+            <input
+              type="checkbox"
+              name="Підсилювач керма"
+              class="check"
+              id="luk6"
+            />
+            <label for="luk6">Підсилювач керма</label>
+            <input
+              type="checkbox"
+              name="Запасне колесо"
+              class="check"
+              id="luk7"
+            />
+            <label for="luk7">Запасне колесо</label>
+            <input
+              type="checkbox"
+              name="Безключовий доступ"
+              class="check"
+              id="luk8"
+            />
+            <label for="luk8">Безключовий доступ</label>
+          </p>
+          <div class="submit">
+            <button type="submit" class="button">Знайти</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <hr />
+      <div class="footer">
+        <div class="block1">
+          <div class="autotext line">
+            <p class="text2">AUTO.MIR</p>
+            <p>скоро у вашому смартфоні</p>
+          </div>
+          <div class="autoimg line">
+            <img class="autoimg line" src="images/3.jpg" alt="" />
+          </div>
+          <div class="autocontact line">
+            <div class="text3">Наші контакти</div>
+            <hr />
+            <nav>
+              <a href="#"
+                ><img
+                  class="footicon"
+                  alt="facebookicon"
+                  src="images/facebook.png"
+              /></a>
+              <a href="#"
+                ><img
+                  class="footicon"
+                  alt="instagramicon"
+                  src="images/inst.png"
+              /></a>
+              <a href="#"
+                ><img
+                  class="footicon"
+                  alt="telegramicon"
+                  src="images/telegram.png"
+              /></a>
+              <a href="#"
+                ><img class="footicon" alt="videricon" src="images/viber.png"
+              /></a>
+              <a href="#"
+                ><img class="footicon" alt="imageicon" src="images/tel.png"
+              /></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
