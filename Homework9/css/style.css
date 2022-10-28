@@ -1,0 +1,356 @@
+@import url("_fonts.css");
+body {
+  background: #e5e5e5;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+a:hover {
+  border-bottom: 1px solid #f13c6e;
+  color: #f13c6e;
+  transition-duration: 0.2s;
+}
+#wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1137px;
+  padding: 0px 15px;
+}
+
+.pad1 {
+  padding: 16px 0 15px 0;
+}
+.navigation {
+  margin: 0 auto;
+  max-width: 430px;
+}
+.navigation a {
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  margin-right: 30px;
+}
+.navigation a:last-child {
+  margin: 0;
+}
+.navigation a:hover {
+  border-bottom: 1px solid rgb(128, 47, 86);
+  color: rgb(128, 47, 86);
+}
+.background2 {
+  background: white;
+}
+.logo {
+  display: inline-block;
+}
+
+.logo a span {
+  position: absolute;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  color: #f13c6e;
+  padding: 20px 0;
+  margin-left: 20px;
+}
+.logo a:hover {
+  border-bottom: 0px solid #f13c6e;
+}
+.feadback {
+  padding-top: 30px;
+  float: right;
+}
+.pad2 {
+  padding: 19px 0 15px 0;
+  border: 1px solid #efefef;
+}
+.feadback a:last-child {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  background: #ffffff;
+  border: 2px solid #f13c6e;
+  border-radius: 40px;
+  padding: 10px 55px;
+  margin-left: 40px;
+}
+
+.feadback a:last-child:hover {
+  box-shadow: 8px 3px 15px 0px rgba(79, 77, 77, 0.5);
+}
+
+.feadback a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.pad3 {
+  padding: 30px 0;
+}
+.nav2 {
+  margin: 0 auto;
+  max-width: 620px;
+}
+.nav2 a {
+  margin-right: 40px;
+}
+.nav2 a:last-child {
+  margin: 0;
+}
+.background3 {
+  background-color: #f13c6e;
+  background-image: url(../images/2.jpg);
+}
+.pad4 {
+  padding: 178px 0 202px 0;
+}
+.chair-box {
+  width: 308px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+}
+.chair-box h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  margin-top: 13px;
+}
+.chair-box p {
+  margin: 41px 0 34px;
+}
+.chair-box a {
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  background: #f13c6e;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  padding: 10px 66px;
+}
+.chair-box a:hover {
+  box-shadow: 8px 3px 15px 0px rgba(79, 77, 77, 0.5);
+}
+.pad5 {
+  padding: 80px 0 0 0;
+}
+.pad5 h2 {
+  margin-bottom: 35px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.card {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  margin: 0 26px 80px 0px;
+  display: inline-block;
+  text-align: center;
+  padding: 7px 0 31px;
+  background: rgba(255, 255, 255, 1);
+}
+.card:last-child {
+  margin: 0;
+}
+.card h3 {
+  color: #000000;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  margin: 12px 0 23px;
+  letter-spacing: 0.05em;
+}
+.button {
+  position: relative;
+  color: white;
+  padding: 9px 53px;
+  background: #f13c6e;
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.button:hover {
+  color: #ffffff;
+  box-shadow: 8px 3px 15px 0px rgba(79, 77, 77, 0.5);
+}
+.card img {
+  margin: 20px 65px 14px;
+}
+li {
+  width: 1130px;
+  list-style-type: none;
+}
+.block {
+  width: 1111px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 20px 0 100px 0;
+}
+
+.email-block {
+  width: 540px;
+  display: inline-block;
+  background: #f13c6e;
+  margin: 0 27px 0 0;
+  padding: 37px 44px 36px 40px;
+}
+.email-block p {
+  margin: 18px 0 26px;
+}
+.block h4 {
+  display: inline-block;
+  width: 250px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+.block img {
+  float: right;
+}
+.text {
+  display: inline-block;
+  max-width: 237px;
+}
+.input {
+  width: 225px;
+  background: #ffffff;
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  padding: 9px 25px;
+  border-style: none;
+}
+.map-block {
+  display: inline-block;
+  width: 540px;
+  background: #f13c6e;
+  padding: 39px 45px 42px 40px;
+}
+.map-block a {
+  padding: 7px 51px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  background: #f13c6e;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+}
+.map-block p {
+  margin: 17px 0 33px;
+}
+.map-block img {
+  margin-top: 19px;
+}
+.menu-box {
+  display: inline-block;
+  max-width: 252px;
+  margin-right: 29px;
+  font-size: 12px;
+  line-height: 28px;
+}
+.menu-box:last-child {
+  margin: 0;
+}
+.menu-box h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #efefef;
+}
+.menu-box a {
+  color: #828282;
+}
+.menu-box menu {
+  margin: 25px 0 0 0;
+}
+.pad6 {
+  padding: 62px 0 50px;
+  border-bottom: 1px solid #efefef;
+}
+.pad7 {
+  padding: 20px 0 40px 0;
+}
+.social {
+  display: inline-block;
+}
+.social a {
+  width: 46px;
+  height: 46px;
+  border: 2px solid #f13c6e;
+  padding: 10.5px;
+  border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 20px 20px 0 0;
+}
+.social a:hover {
+  box-shadow: 8px 3px 15px 0px rgba(79, 77, 77, 0.5);
+}
+.background4 {
+  background: #efefef;
+}
+.pad8 {
+  padding: 16px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
+}
+.pad8 a {
+  color: #828282;
+  float: right;
+  margin-top: -14px;
+}
+.pad8 a:hover {
+  border-bottom: 1px solid black;
+  color: black;
+}
+.imp-block {
+  width: 1124px;
+  margin-bottom: 80px;
+}
+.imp-block a {
+  width: 276px;
+  display: inline-block;
+  background: white;
+  padding: 33px 61px;
+  margin-right: -2px;
+  margin-bottom: 1px;
+}
+.imp-block a:hover {
+  border-bottom: none;
+}
+.imp-block a:nth-child(2),
+.imp-block a:nth-child(3),
+.imp-block a:nth-child(6),
+.imp-block a:nth-child(7),
+.imp-block a:nth-child(10),
+.imp-block a:nth-child(11) {
+  margin-right: -3px;
+}
+.imp-block a:nth-child(3),
+.imp-block a:nth-child(7),
+.imp-block a:nth-child(11) {
+  padding-left: 65px;
+}
+.imp-block a:nth-child(4),
+.imp-block a:nth-child(8),
+.imp-block a:nth-child(12) {
+  padding-left: 66px;
+}
