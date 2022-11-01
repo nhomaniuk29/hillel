@@ -1,0 +1,59 @@
+@import url(_fonts.css);
+
+.menu {
+  background-color: #333333;
+  border-bottom: 8px solid #009eff;
+}
+.menu li {
+  display: inline-block;
+}
+.menu a {
+  display: block;
+  padding: 35px;
+  background-color: #333333;
+  text-decoration: none;
+  color: gainsboro;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+}
+.drop-one,
+.drop-two {
+  position: absolute;
+  background: #009eff;
+  color: white;
+  display: block;
+  width: 360px;
+  display: none;
+}
+.drop-one a,
+.drop-two a {
+  background: #009eff;
+  color: white;
+}
+.drop-one {
+  top: 98px;
+}
+.drop-two {
+  top: 95px;
+  left: 360px;
+}
+span {
+  float: right;
+}
+.menu a:hover {
+  color: white;
+  background-color: #009eff;
+}
+.drop-one li,
+.drop-two li {
+  display: block;
+}
+.menu li:hover > .drop-one,
+.drop-one li:hover > .drop-two {
+  display: block;
+}
+.drop-one a:hover,
+.drop-two a:hover {
+  border: 2px solid skyblue;
+}
