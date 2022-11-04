@@ -73,7 +73,7 @@ a:hover {
   padding: 19px 0 15px 0;
   border: 1px solid #efefef;
 }
-.feadback a:last-child {
+.but-call {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
@@ -84,8 +84,9 @@ a:hover {
   margin-left: 40px;
 }
 
-.feadback a:last-child:hover {
+.but-call:hover {
   box-shadow: 8px 3px 15px 0px rgba(79, 77, 77, 0.5);
+  border: 2px solid #f13c6e;
 }
 
 .feadback a {
@@ -127,9 +128,11 @@ a:hover {
   margin-top: 13px;
 }
 .chair-box p {
-  margin: 41px 0 34px;
+  margin: 40px 0 25px;
 }
-.chair-box a {
+.but-more {
+  width: 171px;
+  display: block;
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.05em;
@@ -137,10 +140,13 @@ a:hover {
   background: #f13c6e;
   border: 2px solid #ffffff;
   border-radius: 40px;
-  padding: 10px 66px;
+  padding: 10px 0;
 }
-.chair-box a:hover {
+.but-more:hover {
   box-shadow: 8px 3px 15px 0px rgba(79, 77, 77, 0.5);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
 }
 .pad5 {
   padding: 80px 0 0 0;
@@ -235,13 +241,16 @@ li {
   padding: 9px 25px;
   border-style: none;
 }
+.input:focus-visible {
+  transition: 0.5s;
+}
 .map-block {
   display: inline-block;
   width: 540px;
   background: #f13c6e;
   padding: 39px 45px 42px 40px;
 }
-.map-block a {
+.but-map {
   padding: 7px 51px;
   font-size: 14px;
   line-height: 16px;
@@ -250,6 +259,11 @@ li {
   background: #f13c6e;
   border: 2px solid #ffffff;
   border-radius: 30px;
+}
+.but-map:hover {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  box-shadow: 8px 3px 15px 0px rgba(79, 77, 77, 0.5);
 }
 .map-block p {
   margin: 17px 0 33px;
@@ -273,12 +287,10 @@ li {
   line-height: 22px;
   padding-bottom: 23px;
   border-bottom: 1px solid #efefef;
+  margin-bottom: 25px;
 }
 .menu-box a {
   color: #828282;
-}
-.menu-box menu {
-  margin: 25px 0 0 0;
 }
 .pad6 {
   padding: 62px 0 50px;
@@ -291,11 +303,7 @@ li {
   display: inline-block;
 }
 .social a {
-  width: 46px;
-  height: 46px;
-  border: 2px solid #f13c6e;
-  padding: 10.5px;
-  border-radius: 50%;
+  max-height: 45px;
   border-radius: 50%;
   display: inline-block;
   margin: 20px 20px 0 0;
