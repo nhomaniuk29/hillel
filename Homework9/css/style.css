@@ -11,7 +11,7 @@ body {
 a:hover {
   border-bottom: 1px solid #f13c6e;
   color: #f13c6e;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
 }
 #wrapper {
   width: 100%;
@@ -48,6 +48,7 @@ a:hover {
   background: white;
 }
 .logo {
+  transition: 0.5s;
   display: inline-block;
 }
 
@@ -74,21 +75,45 @@ a:hover {
   border: 1px solid #efefef;
 }
 .but-call {
+  width: 180px;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
   background: #ffffff;
   border: 2px solid #f13c6e;
   border-radius: 40px;
-  padding: 10px 55px;
+  padding: 10px 55px 10px 55px;
   margin-left: 40px;
+  transition-duration: 0.5s;
 }
-
+.but-call span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 .but-call:hover {
+  padding: 10px 70px 10px 40px;
   box-shadow: 8px 3px 15px 0px rgba(79, 77, 77, 0.5);
   border: 2px solid #f13c6e;
 }
+.button:hover span {
+  padding-right: 25px;
+}
+.but-call span:after {
+  content: "\1F4DE";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 68px;
+  right: -26px;
+  transition: 0.5s;
+}
 
+.but-call:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 .feadback a {
   font-weight: 400;
   font-size: 16px;
@@ -137,15 +162,18 @@ a:hover {
   text-align: center;
   letter-spacing: 0.05em;
   color: #ffffff;
-  background: #f13c6e;
-  border: 2px solid #ffffff;
+  background: linear-gradient(to left, #f8adc2, #f67699, #f13c6e);
+  background-size: 170%;
+  border: 1px solid #ffffff;
   border-radius: 40px;
   padding: 10px 0;
+  transition: 1s;
 }
+
 .but-more:hover {
-  box-shadow: 8px 3px 15px 0px rgba(79, 77, 77, 0.5);
+  background-position: right;
   color: #ffffff;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 40px;
 }
 .pad5 {
@@ -158,6 +186,7 @@ a:hover {
   line-height: 28px;
 }
 .card {
+  transition: 0.5s;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
@@ -302,15 +331,34 @@ li {
 .social {
   display: inline-block;
 }
-.social a {
+.anim-card {
+  margin: 18px 16px 0 0;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  perspective: 1500px;
+}
+.anim-card a {
   max-height: 45px;
   border-radius: 50%;
   display: inline-block;
-  margin: 20px 20px 0 0;
 }
-.social a:hover {
-  box-shadow: 8px 3px 15px 0px rgba(79, 77, 77, 0.5);
+.front,
+.back {
+  position: absolute;
+  transition: 0.6s;
+  backface-visibility: hidden;
 }
+.back {
+  transform: rotateY(180deg);
+}
+.anim-card:hover .front {
+  transform: rotateY(180deg);
+}
+.anim-card:hover .back {
+  transform: rotateY(360deg);
+}
+
 .background4 {
   background: #efefef;
 }
@@ -361,4 +409,17 @@ li {
 .imp-block a:nth-child(8),
 .imp-block a:nth-child(12) {
   padding-left: 66px;
+}
+.imp img {
+  transition: 0.5s;
+}
+.imp:hover img {
+  transform: scale(1.1);
+}
+.card:hover {
+  transform: scale(1.07);
+  background: rgba(244, 244, 244, 0.854);
+}
+.logo:hover {
+  transform: scale(1.01);
 }
