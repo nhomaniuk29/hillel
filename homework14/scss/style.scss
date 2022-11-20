@@ -1,0 +1,56 @@
+@import "./normalize";
+@import "./fonts";
+@import "./variables";
+@import "./mixin";
+@import "./card";
+
+.container {
+  width: 1542px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.products-block {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.36px;
+  &_pad {
+    padding: 57px 66px 48px;
+  }
+}
+.title-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: capitalize;
+  &_pad {
+    padding-bottom: 42px;
+  }
+
+  &__sub-title {
+    font-family: "Yellowtail";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 65px;
+    color: $litegreen;
+  }
+  &__title {
+    font-family: "Roboto";
+    font-size: 45px;
+    line-height: 58px;
+    color: $darkblue;
+    margin: -3px 2px 0 0;
+  }
+}
+.card-block {
+  &__li {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    &_margin {
+      margin-bottom: 20px;
+    }
+  }
+}

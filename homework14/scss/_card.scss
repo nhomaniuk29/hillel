@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: $card-bgcolor;
+  border-radius: 30px;
+  &_pad {
+    padding: 30px 30px 35px;
+  }
+  &__lable {
+    padding: 5px 20px;
+    font-size: 15px;
+    line-height: 27px;
+    background: $darkblue;
+    border-radius: 8px;
+    color: #ffffff;
+  }
+  &__product-image {
+    width: $img-prod-size;
+  }
+  &__product-name {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    color: $darkblue;
+    margin: 19px 0 11px;
+  }
+  &__price-block {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #d4d4d4;
+    padding-top: 11px;
+  }
+  &__price {
+    color: $darkblue;
+    margin-right: 10px;
+    &_decline {
+      font-size: 17px;
+      font-weight: 400;
+      text-decoration-line: line-through;
+      color: $price-gray;
+    }
+  }
+}
