@@ -1,0 +1,22 @@
+.title-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: capitalize;
+  padding-bottom: 42px;
+
+  &__sub-title {
+    font-family: "Yellowtail";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 65px;
+    color: $litegreen;
+  }
+  &__title {
+    font-family: "Roboto";
+    font-size: 45px;
+    line-height: 58px;
+    color: $darkblue;
+    margin: -3px 2px 0 0;
+  }
+}
