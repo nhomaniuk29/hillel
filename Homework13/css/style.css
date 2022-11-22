@@ -12,6 +12,15 @@ body {
 #header {
   border-bottom: 1px solid #cccccc;
 }
+a {
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+a:hover {
+  border-bottom: 1px solid black;
+}
+
 .container {
   max-width: 1470px;
   margin: 0 auto;
@@ -47,8 +56,14 @@ body {
   margin-right: 55px;
 }
 .logo a {
+  border: none;
   height: 28px;
   display: block;
+}
+.logo a:hover {
+  border: none;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 .logo {
   margin-right: 51px;
@@ -59,16 +74,29 @@ body {
   line-height: 45px;
 }
 .btn-log {
+  /* height: 45px; */
   background: rgba(255, 255, 255, 1);
   color: #000000;
-  padding: 13px 35px 14px 36px;
+  line-height: 43px;
+  padding: 0 35px 0 36px;
   border: 1px solid rgba(0, 0, 0, 0.5);
   margin-right: 7px;
 }
+.btn-log:hover {
+  font-size-adjust: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
 .btn-try {
+  line-height: 44px;
   color: #ffffff;
   background: #ff6336;
-  padding: 14px 22px 14px 22px;
+  padding: 0 22px 0 22px;
+}
+.btn-try:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+  border-bottom: 1px solid #ff6336;
 }
 .pad2 {
   padding: 129px 67px 162px 75px;
@@ -97,15 +125,23 @@ body {
   line-height: 60px;
   background: #ff6336;
   color: white;
-  padding: 22px 42px 22px 42px;
+  padding: 0 42px 0 42px;
   margin-right: 3px;
+}
+.btn-try-sec:hover {
+  transform: scale(1.05);
+  border: 1px solid #ff6336;
 }
 .btn-demo {
   background: rgba(255, 255, 255, 1);
   font-weight: 600;
   font-size: 16px;
   line-height: 60px;
-  padding: 21px 29px 21px 29px;
+  padding: 0px 29px 0px 29px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.btn-demo:hover {
+  transform: scale(1.05);
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 .text-block span {
@@ -167,6 +203,10 @@ body {
 }
 .btn-start {
   font-weight: 600;
+  line-height: 22px;
+}
+.btn-start:hover {
+  transform: scale(1.04);
 }
 .block-one:nth-child(2) .text-block-one {
   width: 520px;
@@ -280,7 +320,13 @@ body {
   margin: 34px 0 26px 0;
 }
 .btn-learnmore {
-  text-decoration-line: underline;
+  border-bottom: 1px solid black;
+  line-height: 20px;
+}
+.btn-learnmore:hover {
+  border-bottom: 1px solid rgb(12, 12, 166);
+  color: rgb(12, 12, 166);
+  transform: scale(1.02);
 }
 .cardsblock-two li {
   display: flex;
@@ -302,12 +348,12 @@ body {
   display: flex;
   flex-direction: column;
 }
-.textblock-section-six span {
+.author {
   font-family: "Roboto";
   font-size: 15px;
   line-height: 25px;
 }
-.textblock-section-six p {
+.textblock-section-six blockquote {
   margin-top: 10px;
   margin-bottom: 23px;
 }
@@ -395,8 +441,12 @@ body {
   font-size: 16px;
   line-height: 60px;
   color: #ffffff;
-  padding: 0px 20px;
+  padding: 2px 20px 0px;
   background: #ff6336;
+}
+.btn-int:hover {
+  border-bottom: 1px solid #ff6336;
+  transform: scale(1.05);
 }
 .nine {
   background: rgba(255, 156, 125, 1);
@@ -421,8 +471,11 @@ body {
   line-height: 60px;
   text-align: center;
   color: #ffffff;
-  padding: 21px 40px;
+  padding: 0px 40px;
   background: #000000;
+}
+.btn-try-thirt:hover {
+  transform: scale(1.05);
 }
 #footer {
   background: rgba(238, 238, 238, 1);
@@ -451,8 +504,14 @@ body {
   margin: 1px 0 15px 0;
 }
 .btn-footer {
+  line-height: 18px;
   font-weight: 600;
   padding: 5px 0;
+}
+.btn-footer:hover {
+  border-bottom: 1px solid rgb(12, 12, 166);
+  color: rgb(12, 12, 166);
+  transform: scale(1.02);
 }
 .menu-block {
   width: 75%;
