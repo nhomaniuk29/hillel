@@ -12,10 +12,22 @@
     background: $darkblue;
     border-radius: 8px;
     color: #ffffff;
+    @include tablet {
+      font-size: 13px;
+      line-height: 22px;
+    }
   }
   &__product-image {
     width: $img-prod-size;
+
+    @include tablet {
+      width: 296px;
+    }
+    @include mobile {
+      width: 100%;
+    }
   }
+
   &__product-name {
     font-family: "Roboto";
     font-weight: 400;
@@ -33,11 +45,19 @@
   &__price {
     color: $darkblue;
     margin-right: 10px;
+    @include tablet {
+      font-size: 16px;
+      margin-right: 0px;
+    }
     &--decline {
       font-size: 17px;
       font-weight: 400;
       text-decoration-line: line-through;
       color: $price-gray;
+      @include tablet {
+        font-size: 15px;
+        margin-right: 0px;
+      }
     }
   }
   &__stars {
