@@ -1,0 +1,70 @@
+.contact-body {
+  display: grid;
+  grid-template-columns: repeat(2, 47%);
+  justify-content: center;
+  gap: 60px;
+  font-size: 21px;
+  line-height: 30px;
+  padding: 60px 180px;
+  @include desktopHD {
+    padding: 60px 280px;
+  }
+  @include tabletHD {
+    padding: 60px;
+  }
+  @include tabletSD {
+    grid-template-columns: 100%;
+  }
+  @include mobile {
+    padding: 30px;
+  }
+  &__adress {
+    display: block;
+    color: $main-regular;
+    padding-bottom: 30px;
+    border-bottom: 4px solid $gray-separator;
+  }
+  &__tell {
+    display: block;
+    color: $main-alt;
+    margin: 30px 0px 15px;
+  }
+  &__mail {
+    display: block;
+    color: $active-regular;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 4px solid $gray-separator;
+    transition: 0.2s;
+    &:hover {
+      color: $accent-regular;
+    }
+  }
+  &__facebook-link {
+    display: inline-block;
+    g {
+      path {
+        transition: 0.1s;
+      }
+    }
+    &:hover g path,
+    &:hover .facebook-span {
+      fill: #f0145a;
+      color: #f0145a;
+    }
+  }
+  &__facebook-link-block {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    .facebook-span {
+      transition: 0.1s;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $active-regular;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.footer {
+  background: $gray-bg;
+}
+.footer-body {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0px 34px 30px 60px;
+  @include desktopHD {
+    padding: 0px 160px 30px 160px;
+  }
+  @include mobile {
+    padding: 0px 30px 30px 30px;
+  }
+  &__footer-block {
+    padding-top: 30px;
+    border-top: 2px solid $gray-separator;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+    &--servicepage {
+      border-top: none;
+    }
+  }
+  &__adress-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__btn-adress {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $active-regular;
+    transition: 0.2s;
+    &:hover {
+      color: $accent-regular;
+    }
+  }
+  &__contact-block {
+    display: flex;
+    align-items: center;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  &__facebook-link {
+    transition: 0.2s;
+    &:hover {
+      g {
+        path {
+          fill: #f0145a;
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+
+  &__mail {
+    font-weight: 700;
+    color: $active-regular;
+    transition: 0.2s;
+    &:hover {
+      color: $accent-regular;
+    }
+  }
+  &__copyright {
+    color: $gray-text;
+    position: relative;
+    right: 26px;
+    @include mobile {
+      right: 0;
+      margin-top: 30px;
+    }
+  }
+}

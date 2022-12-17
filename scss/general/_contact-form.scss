@@ -1,0 +1,101 @@
+#contact-body {
+  background: rgba(50, 50, 100, 0.7);
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  @include mobile {
+    justify-content: space-between;
+    margin-top: 0px;
+    display: block;
+  }
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 26px;
+  color: $gray-text;
+  outline: none;
+  border: none;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 15px 0 15px 15px;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 15px;
+  color: black;
+  &:focus {
+    border: 1px solid $active-regular;
+  }
+  &:invalid {
+    color: $accent-regular;
+    border: 1px solid $accent-regular;
+  }
+}
+.text-area {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 26px;
+  color: $gray-text;
+  outline: none;
+  border: none;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 15px 0 115px 15px;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 15px;
+  color: black;
+  &:focus {
+    border: 1px solid $active-regular;
+  }
+  &:invalid {
+    color: $accent-regular;
+    border: 1px solid $accent-regular;
+  }
+}
+.contact-form {
+  max-width: 650px;
+  background: $gray-bg;
+  box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
+  border-radius: 12px;
+  padding: 30px;
+  &--fool {
+    box-shadow: none;
+    .title {
+      margin-bottom: 30px;
+    }
+    @include tabletSD {
+      max-width: 1000px;
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &--page {
+    @include mobile {
+      max-width: 100%;
+      border-radius: 0px;
+      height: 100vh;
+    }
+  }
+}
+.username {
+  margin-bottom: 15px;
+}
+.form-h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $gray-text;
+  margin: 30px 0px 15px;
+}
+.email {
+  margin: 15px 0px 30px;
+}

@@ -1,0 +1,74 @@
+body {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #000000;
+}
+.title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: $gradient-red-text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include mobile {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+.adress {
+  font-size: 16px;
+  line-height: 20px;
+  color: $main-regular;
+  @include mobile {
+    margin-bottom: 10px;
+  }
+}
+.number {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $main-alt;
+  @include mobile {
+    margin: 10px 0px 7px 0px;
+  }
+}
+.btn {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $active-regular;
+  transition: 0.2s;
+  svg {
+    path {
+      transition: 0.2s;
+    }
+  }
+  &:hover {
+    svg {
+      path {
+        stroke: #f0145a;
+      }
+    }
+    color: $accent-regular;
+  }
+}
+.unordered {
+  color: $accent-regular;
+  list-style: disc;
+  margin-left: 20px;
+}
+.ordered {
+  margin-left: 30px;
+  list-style: decimal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $accent-regular;
+}

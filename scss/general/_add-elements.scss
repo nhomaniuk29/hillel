@@ -1,0 +1,99 @@
+.bg {
+  color: white;
+  background: $gradient-supersoft;
+  border-radius: 0px 0px 12px 12px;
+  &--servicespage {
+    position: relative;
+    margin-bottom: 80px;
+    ::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 10px;
+      height: 10px;
+      border-radius: 0px 0px 12px 12px;
+      margin: 0px 40px;
+      background: #e7e7f2;
+    }
+  }
+}
+
+.separator {
+  margin: 0px 10px;
+  @include mobile {
+    display: none;
+  }
+}
+.service-icon {
+  padding: 14px;
+  background: #ffffff;
+  border-radius: 24px;
+}
+.pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  &__pag {
+    display: block;
+    height: 16px;
+    svg {
+      position: relative;
+      top: -5px;
+      circle {
+        transition: 0.2s;
+      }
+    }
+    &--active {
+      circle {
+        opacity: 1;
+      }
+    }
+    &:hover {
+      circle {
+        opacity: 0.6;
+      }
+    }
+  }
+  &__pag:nth-child(4),
+  &__pag:nth-child(5),
+  &__pag:nth-child(6) {
+    display: none;
+  }
+}
+.services-main {
+  background: #ffffff;
+}
+.btn-main {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+  padding: 18px 30px;
+  background: #24a3ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  transition: 0.2s;
+  border: none;
+  &:hover {
+    background: $active-hover;
+  }
+  &:active {
+    background: $active-active;
+  }
+  &--form {
+    width: 100%;
+  }
+}
+.cancel-btn {
+  height: 32px;
+  transition: 0.2s;
+  margin-left: 38px;
+  &:hover {
+    border-radius: 8px;
+    background: $gray-separator;
+  }
+  @include mobile {
+    margin-left: 18px;
+  }
+}
