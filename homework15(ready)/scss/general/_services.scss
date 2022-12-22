@@ -1,0 +1,93 @@
+.services {
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 10px;
+    margin: 0px 20px;
+    height: 10px;
+    background: #cacadb;
+    border-radius: 0px 0px 12px 12px;
+  }
+  &--servicespage {
+    background: $gradient-supersoft;
+    border-radius: 0px 0px 12px 12px;
+  }
+}
+.services-block {
+  padding: 0px 60px 50px;
+  .title {
+    &--mar {
+      margin: 5px 0px 60px;
+      @include mobile {
+        margin: 5px 0px 30px;
+      }
+    }
+  }
+  &__card-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 60px;
+    column-gap: 60px;
+
+    @include mobile {
+      gap: 30px;
+    }
+  }
+
+  @include desktopHD {
+    padding: 0px 160px 50px;
+  }
+  @include tabletSD {
+    padding: 0px 60px 50px;
+  }
+  @include mobile {
+    padding: 0px 30px 50px;
+  }
+  &--servicespage {
+    padding: 176px 60px 50px;
+    @include desktopHD {
+      padding: 176px 160px 50px;
+    }
+    @include tabletHD {
+      padding: 176px 60px 50px;
+    }
+    @include tabletSD {
+      padding: 280px 60px 50px;
+    }
+    @include mobile {
+      padding: 132px 30px 50px;
+    }
+  }
+}
+
+.service-card-link {
+  width: 28.9%;
+  display: block;
+  @include tabletSD {
+    width: 45%;
+  }
+  @include mobile {
+    width: 100%;
+  }
+}
+.card {
+  font-size: 16px;
+  line-height: 26px;
+  transition: 0.2s;
+  color: $basic-white;
+  &__h4 {
+    transition: 0.1s;
+    font-size: 22px;
+    line-height: 27px;
+    color: $active-regular;
+    margin: 22px 0 15px;
+  }
+  &:hover {
+    transform: scale(1.02);
+  }
+  &:hover .card__h4 {
+    color: $accent-regular;
+  }
+}

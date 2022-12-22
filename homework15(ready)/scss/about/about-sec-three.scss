@@ -1,0 +1,37 @@
+.about-sec-three {
+  &__body {
+    display: flex;
+    padding: 60px 180px;
+    gap: 60px;
+    @include desktopHD {
+      padding: 60px 280px;
+    }
+    @include tabletHD {
+      padding: 60px;
+    }
+    @include tabletSD {
+      padding: 60px;
+      flex-direction: column;
+      gap: 30px;
+    }
+    @include mobile {
+      padding: 30px;
+    }
+  }
+  &__text-block {
+    width: 61%;
+    @include tabletHD {
+      width: 100%;
+    }
+  }
+  .title {
+    width: 362px;
+    @include tabletHD {
+      width: 100%;
+    }
+    @include mobile {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+}

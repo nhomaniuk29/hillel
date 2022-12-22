@@ -1,0 +1,16 @@
+.container {
+  min-width: 1440px;
+  margin: 0 auto;
+  @include desktopHD {
+    max-width: 1920px;
+  }
+  @include tabletHD {
+    min-width: 1024px;
+  }
+  @include tabletSD {
+    min-width: 768px;
+  }
+  @include mobile {
+    min-width: 375px;
+  }
+}

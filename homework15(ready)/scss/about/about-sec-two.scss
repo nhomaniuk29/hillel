@@ -1,0 +1,43 @@
+.about-sec-two {
+  &__body {
+    position: relative;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  &__h1 {
+    display: block;
+    position: absolute;
+    left: calc(50% - 478px / 2);
+    top: calc(50% - 117px / 2 + 2.5px);
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 117px;
+    text-align: center;
+    letter-spacing: 63px;
+    text-transform: uppercase;
+    color: $basic-white;
+    opacity: 0.8;
+    text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    @include tabletHD {
+      font-size: 86px;
+      line-height: 105px;
+      left: calc(50% - 448px / 2);
+      top: calc(50% - 105px / 2 - 0.23px);
+    }
+    @include tabletSD {
+      font-size: 46px;
+      line-height: 56px;
+      left: calc(50% - 328px / 2);
+      top: calc(50% - 56px / 2 + 0.2px);
+    }
+    @include mobile {
+      font-size: 36px;
+      line-height: 44px;
+      left: calc(50% - 148px / 2);
+      top: calc(50% - 44px / 2 - 0.03px);
+      letter-spacing: 13px;
+    }
+  }
+}

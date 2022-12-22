@@ -1,0 +1,107 @@
+.border-top {
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 10px;
+    height: 10px;
+    border-radius: 0px 0px 12px 12px;
+    margin: 0px 40px;
+    background: #e7e7f2;
+  }
+}
+.trust-company {
+  &__h3 {
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $main-regular;
+    padding-bottom: 30px;
+    @include mobile {
+      padding: 60px 0px 30px 0px;
+    }
+    &--servicepage {
+      padding: 60px 0px 30px 0px;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    @include tabletSD {
+      grid-template-columns: repeat(3, 33.3333%);
+    }
+    @include mobile {
+      grid-template-columns: 100%;
+    }
+    .block {
+      display: flex;
+      height: 120px;
+      align-items: center;
+      justify-content: center;
+
+      &--bg1 {
+        background: #1c4280;
+      }
+      &--bg2 {
+        background: #143646;
+      }
+      &--bg3 {
+        background: #f48b30;
+      }
+      &--bg4 {
+        background: #9e4dc3;
+      }
+      &--bg5 {
+        background: #fd9339;
+      }
+      &--bg6 {
+        background: #e2e2e4;
+      }
+      &--bg7 {
+        background: #c71c36;
+        @include mobile {
+          display: none;
+        }
+      }
+      &--bg8 {
+        background: #dcf3f9;
+        @include mobile {
+          display: none;
+        }
+      }
+      &--bg9 {
+        background: #eaeaea;
+        @include mobile {
+          display: none;
+        }
+      }
+      &--bg10 {
+        background: #282240;
+        @include mobile {
+          display: none;
+        }
+      }
+      &--bg11 {
+        background: #1d4568;
+        @include mobile {
+          display: none;
+        }
+      }
+      &--bg12 {
+        background: #000000;
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+    @include desktopHD {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+  }
+  @include desktopHD {
+    padding: 0px 160px 60px;
+  }
+}
